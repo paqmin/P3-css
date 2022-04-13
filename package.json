@@ -1,0 +1,23 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paqmin/P3-css.git"
+  },
+  "keywords": [
+    "P3",
+    "sass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paqmin/P3-css/issues"
+  },
+  "homepage": "https://github.com/paqmin/P3-css#readme"
+}
