@@ -16,7 +16,13 @@
 </head>
 <body>
   <header class="header">
-   <a href="index.html"><img id="logo" src="public/images/logo/ohmyfood@2x.svg" alt="logo_oh_my_food" /></a>
+   <a class ="header__logo" href="index.html"><img src="public/images/logo/ohmyfood@2x.svg" alt="logo_oh_my_food" /></a>
+   <form class="form" method="post" action="traitement.php">
+    <span class="form__position">
+       <i class="fa-solid fa-location-dot fa-xl"></i>
+    </span>
+    <input class="form__rechercher" type="search" name="rechercher" id="rechercher" placeholder="Paris, Belleville" />
+ </form>
   </header> 
 </body>
 </html>
