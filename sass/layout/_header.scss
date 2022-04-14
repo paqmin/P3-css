@@ -1,9 +1,18 @@
 .header {
-    background: $colour-primary;
-    height: 10rem;
+    background: $colour-white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;   
-  
+    width: 100%; 
+    height: 10rem;
+    
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        justify-self: center;
+       
+    }
+   
 }
