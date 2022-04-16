@@ -1,4 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-   
+    color: $colour-black;
+}
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 100;
+    font-size: x-large; 
+}
+input[type="search"]::placeholder {
+    color: $colour-black;
+    font-weight: 600;
 }
