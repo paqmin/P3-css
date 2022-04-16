@@ -1,9 +1,35 @@
 .btn{
     color: white;
     background: linear-gradient($colour-primary, $colour-secondary);
-    width: 250px;
+    width: 230px;
     height: 50px;
     border: none;
-    box-shadow: 1px 1px 2px 2px $colour-lightgray;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 25px;  
+}
+.btn_fctnt{
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+    height: 70px;
+    text-align: center;
+    @include shadow;
+    margin: 0.5*$layout_margin 0;  
+    &__numero{
+        display: flex;
+        background: $colour-primary;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        color: $colour-white;
+        font-weight: normal;
+    }
 }

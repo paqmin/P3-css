@@ -5,13 +5,13 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: $colour-lightgray;
-    padding: $padding*2 $padding*2;
+    padding: $padding*1.5 $padding*2;
     text-align: center;
     & h1{
         margin-bottom: $layout_margin;
     }
     & p{
-        margin-bottom: $layout_margin;
+        margin-bottom: $layout_margin*2;
     }
    
 }
