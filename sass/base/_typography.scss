@@ -11,8 +11,13 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: large; 
+    margin-bottom: $layout_margin;
 }
-
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:medium; 
+}
 input[type="search"]::placeholder {
     color: $colour-black;
     font-weight: 600;
