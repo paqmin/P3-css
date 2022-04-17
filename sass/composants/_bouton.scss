@@ -9,7 +9,7 @@
 }
 .btn_fctnt{
     width: 100%;
-    background-color: #F6F6F6;
+    background-color:$colour-lightgray;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -31,5 +31,6 @@
         align-items: center;
         color: $colour-white;
         font-weight: normal;
+ 
     }
 }
