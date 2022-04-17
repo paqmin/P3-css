@@ -4,9 +4,7 @@
    
     margin: 2*$layout_margin 1.2*$layout_margin;
 
-    & h2{
-        margin-bottom: $layout_margin;
-    }
+   
     &__ens_btns{
         display: flex;
         flex-direction: column;
