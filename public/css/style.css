@@ -53,32 +53,47 @@ button {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 25px;
 }
+.btn:hover {
+  color: #F2F2F2;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
 
 .btn_fctnt {
-  width: 100%;
+  width: 98%;
   background-color: #F2F2F2;
   display: flex;
   justify-content: flex-start;
-  align-content: center;
   align-items: center;
-  padding: 10px;
   border-radius: 18px;
   border: none;
-  height: 70px;
+  height: 80px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 0.5rem 0;
+  left: 1rem;
 }
 .btn_fctnt__numero {
   display: flex;
   background: #9356DC;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-weight: normal;
+  margin: 0;
+  position: relative;
+  left: -1rem;
+}
+.btn_fctnt i {
+  margin-right: 1.5rem;
+}
+.btn_fctnt:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.btn_fctnt:hover i {
+  color: #9356DC;
 }
 
 .header {
@@ -135,13 +150,18 @@ button {
   margin-bottom: 2rem;
 }
 
-.fonctionnement {
+.fctnt {
   display: flex;
   flex-direction: column;
-  margin: 2rem 1rem;
+  margin: 2rem 1.2rem;
 }
-.fonctionnement h2 {
+.fctnt h2 {
   margin-bottom: 1rem;
+}
+.fctnt__ens_btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
