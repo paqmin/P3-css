@@ -96,6 +96,44 @@ button {
   color: #9356DC;
 }
 
+.card-resto {
+  background-color: white;
+  box-shadow: 2px 2px 20px rgb(226, 223, 223);
+  border-radius: 20px;
+  position: relative;
+  box-sizing: border-box;
+  color: #333;
+  text-decoration: none;
+  width: 47%;
+}
+.card-resto__card-image {
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  box-sizing: border-box;
+  height: 25vh;
+}
+.card-resto__card-image img {
+  filter: grayscale(0);
+  min-height: 100%;
+  max-width: 140%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-resto--object-fit-norm {
+  object-fit: cover;
+}
+.card-resto h4 {
+  box-sizing: border-box;
+  padding: 5%;
+  margin: 0;
+}
+.card-resto .card-image img:hover {
+  filter: grayscale(1);
+}
+
 .header {
   background: #fff;
   display: flex;
@@ -162,6 +200,14 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.resto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  padding: 2rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
