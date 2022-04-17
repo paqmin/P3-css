@@ -14,6 +14,9 @@ body {
   box-sizing: border-box;
   background: #fff;
 }
+body:hover {
+  cursor: pointer;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -103,7 +106,7 @@ button {
   color: #9356DC;
 }
 
-a.card-resto {
+.card-resto {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -118,14 +121,28 @@ a.card-resto {
   width: 100%;
   margin-bottom: 4%;
 }
-a.card-resto .card-image {
+.card-resto__new {
+  position: absolute;
+  width: 75px;
+  padding: 0.5rem 0;
+  text-align: center;
+  right: 1rem;
+  top: 1rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  z-index: 1;
+}
+.card-resto__new h4 {
+  font-size: 80%;
+}
+.card-resto .card-image {
   height: 70%;
   overflow: hidden;
   position: relative;
   border-radius: 20px 20px 0px 0px;
   box-sizing: border-box;
 }
-a.card-resto .card-image img {
+.card-resto .card-image img {
   filter: grayscale(0);
   min-height: 100%;
   max-width: 100%;
@@ -134,19 +151,25 @@ a.card-resto .card-image img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-a.card-resto .object-fit-norm {
+.card-resto .object-fit-norm {
   object-fit: cover;
 }
-a.card-resto .card-image img:hover {
+.card-resto .card-image img:hover {
   filter: grayscale(1);
 }
-a.card-resto .bloc-nom {
+.card-resto .bloc-nom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
   padding: 1rem;
 }
+.card-resto .bloc-nom:hover i {
+  color: #9356DC;
+  background-color: rgba(147, 86, 220, 0.2);
+}
+
 .header {
   background: #fff;
   display: flex;
