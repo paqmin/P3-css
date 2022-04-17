@@ -1,9 +1,16 @@
-.fonctionnement{
+.fctnt{
     display: flex;
     flex-direction: column;
-    margin: 2*$layout_margin $layout_margin;
+   
+    margin: 2*$layout_margin 1.2*$layout_margin;
 
     & h2{
         margin-bottom: $layout_margin;
+    }
+    &__ens_btns{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
     }
 }

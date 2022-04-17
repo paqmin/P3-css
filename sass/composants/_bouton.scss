@@ -1,36 +1,56 @@
-.btn{
+.btn {
     color: white;
     background: linear-gradient($colour-primary, $colour-secondary);
     width: 230px;
     height: 50px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 25px;  
+    border-radius: 25px;
+
+    &:hover {
+       color: $colour-lightgray;
+       background: linear-gradient($colour-secondary, $colour-primary);
+
+    }
 }
-.btn_fctnt{
-    width: 100%;
-    background-color:$colour-lightgray;
+
+.btn_fctnt {
+    width: 98%;
+    background-color: $colour-lightgray;
     display: flex;
     justify-content: flex-start;
-    align-content: center;
     align-items: center;
-    padding: 10px;
     border-radius: 18px;
     border: none;
-    height: 70px;
+    height: 80px;
     text-align: center;
     @include shadow;
-    margin: 0.5*$layout_margin 0;  
-    &__numero{
+    margin: 0.5*$layout_margin 0;
+    left: $layout_margin;
+
+    &__numero {
         display: flex;
         background: $colour-primary;
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         justify-content: center;
         align-items: center;
         color: $colour-white;
         font-weight: normal;
- 
+        margin: 0;
+        position: relative;
+        left: -$layout_margin;
+    }
+
+    & i {
+        margin-right: 1.5*$layout_margin;
+    }
+
+    &:hover {
+        background-color: rgba($colour-primary, 0.2);
+        & i {
+            color: $colour-primary;
+        }
     }
 }
