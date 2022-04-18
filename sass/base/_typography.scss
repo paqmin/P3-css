@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     color: $colour-black;
 }
 h1 {
@@ -9,6 +9,12 @@ h1 {
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: large; 
+    margin-bottom: $layout_margin;
+}
+footer h2 {
+    font-family: 'Shrikhand', cursive;
     font-weight: 600;
     font-size: large; 
     margin-bottom: $layout_margin;

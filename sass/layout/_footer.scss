@@ -1,0 +1,28 @@
+footer {
+    background-color: darken($colour-gray, 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; 
+    padding: 2*$layout_margin 2*$layout_margin;
+    color: white;
+    & a {
+        text-decoration: none;
+        color: $colour-white;
+        font-weight: 900;
+        & i{
+            margin-right: $layout_margin;
+            
+    width: 25px;
+    height: 25px;
+            
+        }
+        
+    }
+
+    & li{
+        list-style-type: none; 
+        margin-bottom: $layout_margin; 
+    }
+   
+}
