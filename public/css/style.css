@@ -14,9 +14,6 @@ body {
   box-sizing: border-box;
   background: #fff;
 }
-body:hover {
-  cursor: pointer;
-}
 
 body {
   font-family: "Roboto", sans-serif;
