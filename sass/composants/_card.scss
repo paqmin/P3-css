@@ -14,8 +14,8 @@
     width: 100%;
     margin-bottom: 4%;
 
-    &__new{
-        
+    &__new {
+
         position: absolute;
         width: 75px;
         padding: 0.5*$layout_margin 0;
@@ -23,12 +23,14 @@
         right: $layout_margin;
         top: $layout_margin;
         background-color: $colour-tertiary;
-        color:darken($colour-tertiary, 50%);
+        color: darken($colour-tertiary, 50%);
         z-index: 1;
-        & h4{
+
+        & h4 {
             font-size: 80%;
         }
     }
+
     & .card-image {
         height: 70%;
         overflow: hidden;
@@ -46,7 +48,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-     
+
 
     & .object-fit-norm {
         object-fit: cover;
@@ -63,15 +65,13 @@
         align-items: center;
         box-sizing: border-box;
         padding: $layout_margin;
-        
-        &:hover i{
-           
-           
+
+        &:hover i {
             color: $colour-primary;
-                background-color: rgba($colour-primary, 0.2);
-            
+            background-color: rgba($colour-primary, 0.2);
+
         }
-        
+
     }
 
 }
