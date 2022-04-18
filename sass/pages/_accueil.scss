@@ -1,0 +1,42 @@
+.slogan{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $colour-lightgray;
+    padding: $padding*1.5 $padding*2;
+    text-align: center;
+    & h1{
+        margin-bottom: $layout_margin;
+    }
+    & p{
+        margin-bottom: $layout_margin*2;
+    } 
+}
+
+.fctnt{
+    display: flex;
+    flex-direction: column;
+   
+    margin: 2*$layout_margin 1.2*$layout_margin;
+
+   
+    &__ens_btns{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+}
+
+.resto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $colour-lightgray;
+    padding: 2*$layout_margin $layout_margin;
+    
+  
+    
+}
