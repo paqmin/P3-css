@@ -19,7 +19,9 @@ footer {
             height: 20px;
 
         }
-
+        &:hover{
+            color: $colour-primary;
+        }
     }
 
     & li {

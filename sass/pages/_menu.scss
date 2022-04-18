@@ -1,0 +1,62 @@
+.menu{
+    /* ENTETE */
+    &__entete{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        box-sizing: border-box;
+        width: 100%;
+
+    & img{
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+    }
+
+    & .nom_resto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 2*$layout_margin;
+        border-radius: 45px 45px 0 0;
+        margin-top: -2*$layout_margin;
+        background-color: $colour-lightgray;
+    }
+    }
+    /*  ENTREES */
+    &__description{
+        padding: 2*$layout_margin;
+        background-color: $colour-lightgray;
+        &--entree{
+            & h3{
+                text-transform: uppercase;
+                margin-bottom: $layout_margin; 
+            }
+        & .bloc_plat{
+            width: 100%;
+            background-color: $colour-white;
+            padding: $layout_margin;
+            border-radius: 20px;
+            margin-bottom: $layout_margin;
+            &--details{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;  
+            }
+        }
+
+    }
+}
+    /* PLATS */
+    /* DESSERTS */
+   
+    
+   
+   
+
+    
+    
+
+}
