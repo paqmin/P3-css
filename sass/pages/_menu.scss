@@ -1,62 +1,82 @@
-.menu{
+.menu {
+
     /* ENTETE */
-    &__entete{
+    &__entete {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         box-sizing: border-box;
         width: 100%;
 
-    & img{
-        width: 100%;
-        height: 255px;
-        object-fit: cover;
+        & img {
+            width: 100%;
+            height: 255px;
+            object-fit: cover;
+        }
+
+        & .nom_resto {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 2*$layout_margin;
+            border-radius: 45px 45px 0 0;
+            margin-top: -2*$layout_margin;
+            background-color: $colour-lightgray;
+        }
     }
 
-    & .nom_resto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        padding: 2*$layout_margin;
-        border-radius: 45px 45px 0 0;
-        margin-top: -2*$layout_margin;
+    /*  PLATS */
+    &__description {
+        padding: $layout_margin;
         background-color: $colour-lightgray;
-    }
-    }
-    /*  ENTREES */
-    &__description{
-        padding: 2*$layout_margin;
-        background-color: $colour-lightgray;
-        &--entree{
-            & h3{
-                text-transform: uppercase;
-                margin-bottom: $layout_margin; 
-            }
-        & .bloc_plat{
+
+        &--titre {
+            margin-bottom: 3*$layout_margin;
+            text-transform: uppercase;
+            margin-bottom: $layout_margin;
+        }
+        &--bloc_plat {
             width: 100%;
             background-color: $colour-white;
             padding: $layout_margin;
             border-radius: 20px;
             margin-bottom: $layout_margin;
-            &--details{
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;  
+                
+            & h4{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 80%;
+                }
+               
+
+            &--details {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    /* & p{
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        margin-right: 2%;
+                    } */
+                    & h4{
+                        margin-left: 10px;
+                    }
+                } 
             }
-        }
+
+        
 
     }
-}
-    /* PLATS */
-    /* DESSERTS */
-   
-    
-   
-   
 
-    
-    
+
+
+
+
+
+
 
 }
