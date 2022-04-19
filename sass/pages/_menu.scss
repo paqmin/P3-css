@@ -59,10 +59,7 @@
             @include shadow;
                 
             & h4{
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                
+                @include textcut;
                 }
                
 
@@ -72,9 +69,7 @@
             justify-content: space-between;
             align-items: center;
                     & p{
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
+                        @include textcut;
                         margin-right: 2%;}
                     
                      & h4{
