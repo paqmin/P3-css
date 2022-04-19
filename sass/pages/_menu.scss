@@ -35,7 +35,20 @@
         &--titre {
             margin-bottom: 3*$layout_margin;
             text-transform: uppercase;
+            padding-bottom: 0.5*$layout_margin;
             margin-bottom: $layout_margin;
+            border-bottom: 3px solid $colour-tertiary;
+            position: relative;
+        
+            &:after {
+                content: '';
+                width: 93%;
+                height: 10px;
+                position: absolute;
+                right:-1.5*$layout_margin;
+                top: 1.5*$layout_margin;
+                background-color: $colour-lightgray;
+            }
         }
         &--bloc_plat {
             width: 100%;
@@ -43,28 +56,32 @@
             padding: $layout_margin;
             border-radius: 20px;
             margin-bottom: $layout_margin;
+            @include shadow;
                 
             & h4{
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                width: 80%;
+                
                 }
                
 
             &--details {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    /* & p{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+                    & p{
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow: hidden;
-                        margin-right: 2%;
-                    } */
-                    & h4{
-                        margin-left: 10px;
-                    }
+                        margin-right: 2%;}
+                    
+                     & h4{
+                        margin-left: 10%;
+                        overflow: visible;
+                        text-overflow: initial;
+                    } 
                 } 
             }
 
