@@ -340,17 +340,16 @@ footer li {
   text-transform: uppercase;
   padding-bottom: 2.2%;
   margin-bottom: 4.4%;
-  border-bottom: 3px solid #99E2D0;
   position: relative;
 }
 .menu__description--titre:after {
   content: "";
+  border-bottom: 3px solid #99E2D0;
   width: 93%;
   height: 10px;
   position: absolute;
   right: -6.6%;
   top: 6.6%;
-  background-color: #F2F2F2;
 }
 .menu__description--bloc_plat {
   width: 100%;

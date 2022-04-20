@@ -37,17 +37,18 @@
             text-transform: uppercase;
             padding-bottom: 0.5*$layout_margin;
             margin-bottom: $layout_margin;
-            border-bottom: 3px solid $colour-tertiary;
+            
             position: relative;
         
             &:after {
                 content: '';
+                border-bottom: 3px solid $colour-tertiary;
                 width: 93%;
                 height: 10px;
                 position: absolute;
                 right:-1.5*$layout_margin;
                 top: 1.5*$layout_margin;
-                background-color: $colour-lightgray;
+                
             }
         }
         &--bloc_plat {
