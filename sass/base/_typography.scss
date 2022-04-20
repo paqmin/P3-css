@@ -13,6 +13,10 @@ h2 {
     font-size: large; 
     margin-bottom: $layout_margin;
 }
+.slogan p {
+    color:darken($colour-gray, 60%);
+    margin-bottom: $layout_margin*2;
+}
 footer h2 {
     font-family: 'Shrikhand', cursive;
     font-weight: 600;

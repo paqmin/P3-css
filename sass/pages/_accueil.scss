@@ -9,23 +9,21 @@
     text-align: center;
     & h1{
         margin-bottom: $layout_margin;
-    }
-    & p{
-        margin-bottom: $layout_margin*2;
-    } 
+    }   
 }
 
 .fctnt{
     display: flex;
     flex-direction: column;
-   
     margin: 2*$layout_margin 1.2*$layout_margin;
-
-   
+   @include desktop-only{
+       flex-direction: row;
+   }
     &__ens_btns{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+       
 
     }
 }
