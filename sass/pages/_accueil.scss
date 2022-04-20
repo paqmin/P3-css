@@ -1,4 +1,4 @@
-.slogan{
+.slogan {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,34 +7,43 @@
     background-color: $colour-lightgray;
     padding: $padding*1.5 $padding*2;
     text-align: center;
-    & h1{
+
+    & h1 {
         margin-bottom: $layout_margin;
-    }   
-}
-
-.fctnt{
-    display: flex;
-    flex-direction: column;
-    margin: 2*$layout_margin 1.2*$layout_margin;
-   @include desktop-only{
-       flex-direction: row;
-   }
-    &__ens_btns{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-       
-
     }
 }
 
-.resto{
+.fctnt {
+    display: flex;
+    flex-direction: column;
+    margin: 2*$layout_margin 1.2*$layout_margin;
+
+    &__ens_btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include desktop-only {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+.resto {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: $colour-lightgray;
     padding: 2*$layout_margin $layout_margin;
-    
-  
-    
+
+    & .liste_resto {
+        @include desktop-only {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin-right: $layout_margin;
+            margin-left: $layout_margin;
+        }
+    }
 }
