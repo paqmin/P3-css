@@ -17,6 +17,10 @@
     display: flex;
     flex-direction: column;
     margin: 2*$layout_margin 1.2*$layout_margin;
+    @include desktop-only {
+        margin-left: 2*$layout_margin;
+        margin-right: 2*$layout_margin;
+    }
 
     &__ens_btns {
         display: flex;
@@ -24,8 +28,9 @@
         align-items: flex-end;
 
         @include desktop-only {
-            flex-direction: row;
-            justify-content: space-evenly;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
         }
     }
 }
@@ -36,14 +41,17 @@
     flex-direction: column;
     background-color: $colour-lightgray;
     padding: 2*$layout_margin $layout_margin;
-
+    @include desktop-only {
+    padding: 2*$layout_margin 2*$layout_margin;
+    }
     & .liste_resto {
         @include desktop-only {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
-            margin-right: $layout_margin;
-            margin-left: $layout_margin;
+            align-items: center;
+            /* margin-right: 2*$layout_margin;
+            margin-left: 2*$layout_margin; */
         }
     }
 }

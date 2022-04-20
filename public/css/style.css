@@ -33,6 +33,11 @@ h2 {
   font-size: large;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 992px) {
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
 
 .slogan p {
   color: #4a4646;
@@ -105,9 +110,9 @@ button {
 }
 @media screen and (min-width: 992px) {
   .btn_fctnt {
-    width: 60%;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    width: 30%;
+    /* margin-right: 2*$layout_margin;
+    margin-left: 2*$layout_margin; */
     padding-right: 2%;
   }
 }
@@ -151,8 +156,7 @@ button {
 }
 @media screen and (min-width: 992px) {
   .card-resto {
-    width: 45%;
-    margin-right: 5%;
+    width: 48%;
     height: 400px;
   }
 }
@@ -176,6 +180,11 @@ button {
   position: relative;
   border-radius: 20px 20px 0px 0px;
   box-sizing: border-box;
+}
+@media screen and (min-width: 992px) {
+  .card-resto .card-image {
+    height: 80%;
+  }
 }
 .card-resto .card-image img {
   filter: grayscale(0);
@@ -307,6 +316,12 @@ footer li {
   flex-direction: column;
   margin: 2rem 1.2rem;
 }
+@media screen and (min-width: 992px) {
+  .fctnt {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
 .fctnt__ens_btns {
   display: flex;
   flex-direction: column;
@@ -314,8 +329,9 @@ footer li {
 }
 @media screen and (min-width: 992px) {
   .fctnt__ens_btns {
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 }
 
@@ -327,12 +343,18 @@ footer li {
   padding: 2rem 1rem;
 }
 @media screen and (min-width: 992px) {
+  .resto {
+    padding: 2rem 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
   .resto .liste_resto {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    align-items: center;
+    /* margin-right: 2*$layout_margin;
+    margin-left: 2*$layout_margin; */
   }
 }
 
@@ -363,9 +385,23 @@ footer li {
   margin-top: -2rem;
   background-color: #F2F2F2;
 }
+@media screen and (min-width: 992px) {
+  .menu .menu__description--plat {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+    background-color: #F2F2F2;
+  }
+}
 .menu__description {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #F2F2F2;
+}
+@media screen and (min-width: 992px) {
+  .menu__description {
+    width: 30%;
+  }
 }
 .menu__description--titre {
   margin-bottom: 3rem;

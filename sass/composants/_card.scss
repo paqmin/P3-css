@@ -11,9 +11,9 @@
     color: #333;
     width: 100%;
     margin-bottom: 4%;
+    
     @include desktop-only {
-        width: 45%;
-        margin-right: 5%;
+        width: 48%;
         height: 400px;
     }
 
@@ -39,6 +39,9 @@
         position: relative;
         border-radius: 20px 20px 0px 0px;
         box-sizing: border-box;
+        @include desktop-only {
+            height: 80%;
+        }
     }
 
     & .card-image img {

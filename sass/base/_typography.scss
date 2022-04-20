@@ -12,6 +12,9 @@ h2 {
     font-weight: 600;
     font-size: large; 
     margin-bottom: $layout_margin;
+    @include desktop-only {
+    margin-bottom: 2*$layout_margin;
+    }
 }
 .slogan p {
     color:darken($colour-gray, 60%);

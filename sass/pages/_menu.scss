@@ -28,9 +28,21 @@
     }
 
     /*  PLATS */
+    .menu__description--plat{
+        @include desktop-only{
+            display: flex;
+            flex-flow: row wrap;
+            justify-items: center;
+            align-items: center;
+            background-color: $colour-lightgray;
+        }
+    }
     &__description {
-        padding: $layout_margin;
+        padding: 2*$layout_margin;
         background-color: $colour-lightgray;
+        @include desktop-only{
+           width: 30%;
+        }
 
         &--titre {
             margin-bottom: 3*$layout_margin;
