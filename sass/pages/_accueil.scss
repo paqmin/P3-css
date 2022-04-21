@@ -17,7 +17,8 @@
     display: flex;
     flex-direction: column;
     margin: 2*$layout_margin 1.2*$layout_margin;
-    @include desktop-only {
+
+    @include media(desktop-only) {
         margin-left: 2*$layout_margin;
         margin-right: 2*$layout_margin;
     }
@@ -27,10 +28,10 @@
         flex-direction: column;
         align-items: flex-end;
 
-        @include desktop-only {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
+    @include media(desktop-only) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
         }
     }
 }
@@ -41,28 +42,18 @@
     flex-direction: column;
     background-color: $colour-lightgray;
     padding: 2*$layout_margin $layout_margin;
-    @include desktop-only {
-    padding: 2*$layout_margin 2*$layout_margin;
-    }
-    @include tablet-only {
+
+    @include media(desktop-only, tablet-only) {
         padding: 2*$layout_margin 2*$layout_margin;
-        }
+    }
+
     & .liste_resto {
-        @include desktop-only {
+        @include media(desktop-only, tablet-only) {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
-            /* margin-right: 2*$layout_margin;
-            margin-left: 2*$layout_margin; */
         }
-        @include tablet-only {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: center;
-            /* margin-right: 2*$layout_margin;
-            margin-left: 2*$layout_margin; */
-        }
+
     }
 }

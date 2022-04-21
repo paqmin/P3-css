@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-@mixin desktop-only {
+/* @mixin desktop-only {
     @media screen and (min-width: map-get($breakpoints, desktop)){
         &{ @content; }
         }
@@ -21,7 +21,7 @@
     @media screen and (min-width: map-get($breakpoints, phone)) and (max-width: map-get($breakpoints, tablet)){
         &{ @content; }
         }
-    }
+    } */
 
     @mixin media($keys...) { 
         @each $key in $keys { 
