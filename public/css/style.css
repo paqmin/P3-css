@@ -165,6 +165,12 @@ button {
     height: 400px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .card-resto {
+    width: 40%;
+    height: 200px;
+  }
+}
 .card-resto__new {
   position: absolute;
   width: 75px;
@@ -187,6 +193,11 @@ button {
   box-sizing: border-box;
 }
 @media screen and (min-width: 900px) {
+  .card-resto .card-image {
+    height: 80%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
   .card-resto .card-image {
     height: 80%;
   }
@@ -430,11 +441,27 @@ footer li {
     padding: 0 2rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .menu .menu__description--plat {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #F2F2F2;
+    padding: 0 2rem;
+  }
+}
 .menu__description {
   padding: 2rem;
   background-color: #F2F2F2;
 }
 @media screen and (min-width: 900px) {
+  .menu__description {
+    width: 400px;
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
   .menu__description {
     width: 400px;
     padding: 2rem 0;

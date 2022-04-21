@@ -37,6 +37,15 @@
             background-color: $colour-lightgray;
             padding: 0 2*$layout_margin;
         }
+        @include tablet-only
+        {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: center;
+            background-color: $colour-lightgray;
+            padding: 0 2*$layout_margin;
+        }
     }
 
     &__description {
@@ -44,6 +53,10 @@
         background-color: $colour-lightgray;
 
         @include desktop-only {
+            width:400px;
+          padding: 2*$layout_margin 0;
+        }
+        @include tablet-only {
             width:400px;
           padding: 2*$layout_margin 0;
         }
