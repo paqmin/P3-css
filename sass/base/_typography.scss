@@ -8,11 +8,11 @@ h1 {
     font-size: x-large; 
 }
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Shrikhand',Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: large; 
     margin-bottom: $layout_margin;
-    @include desktop-only {
+    @include media(desktop-only) {
     margin-bottom: 2*$layout_margin;
     }
 }
@@ -31,7 +31,7 @@ footer li a {
     font-weight: 600;
     font-size: large; 
     color: white;
-    @include desktop-only{
+    @include media(desktop-only){
      font-size: 95%;
         
         

@@ -12,11 +12,11 @@
     width: 100%;
     margin-bottom: 4%;
     
-    @include desktop-only {
+    @include media (desktop-only) {
         width: 48%;
         height: 400px;
     }
-    @include tablet-only {
+    @include media (tablet-only) {
         width: 48%;
         height: 300px;
     }
@@ -46,12 +46,7 @@
         @include media(desktop-only, tablet-only){
             height: 80%;
         }
-        /* @include desktop-only {
-            height: 80%;
-        }
-        @include tablet-only {
-            height: 80%;
-        } */
+
     }
 
     & .card-image img {
@@ -86,6 +81,7 @@
             background-color: rgba($colour-primary, 0.2);
 
         }
+       
 
     }
 

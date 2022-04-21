@@ -29,16 +29,7 @@
 
     /*  PLATS */
     .menu__description--plat {
-        @include desktop-only {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-content: center;
-            background-color: $colour-lightgray;
-            padding: 0 2*$layout_margin;
-        }
-        @include tablet-only
-        {
+        @include media(desktop-only, tablet-only) {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -52,14 +43,11 @@
         padding: 2*$layout_margin;
         background-color: $colour-lightgray;
 
-        @include desktop-only {
-            width:400px;
-          padding: 2*$layout_margin 0;
+        @include media(desktop-only, tablet-only) {
+            width: 400px;
+            padding: 2*$layout_margin 0;
         }
-        @include tablet-only {
-            width:400px;
-          padding: 2*$layout_margin 0;
-        }
+
 
         &--titre {
             margin-bottom: 3*$layout_margin;

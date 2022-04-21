@@ -31,7 +31,7 @@
     @include shadow;
     margin: 0.5*$layout_margin 0;
     left: $layout_margin;
-    @include desktop-only{
+    @include media(desktop-only){
         width: 30%;
         /* margin-right: 2*$layout_margin;
         margin-left: 2*$layout_margin; */

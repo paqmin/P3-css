@@ -4,20 +4,25 @@ footer {
     flex-direction: column;
     width: 100%;
     padding: 2*$layout_margin 1.5*$layout_margin;
-    @include desktop-only{
+    @include media(desktop-only){
         display: flex;
         flex-direction: row;
         justify-content: flex-start;   
     }
+    @include media(tablet-only){
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+    }
     
     & h2{
-        @include desktop-only{
+        @include media(desktop-only){
          width: 15%;   
          text-align: center; 
         }  
     }
     & nav{
-        @include desktop-only{
+        @include media(desktop-only){
          width: 82%;    
         }  
     }
@@ -25,8 +30,6 @@ footer {
         text-decoration: none;
         color: $colour-white;
         font-weight: 900;
-        
-
         & i {
             margin-right: 0.5*$layout_margin;
             width: 20px;
@@ -37,29 +40,20 @@ footer {
             color: $colour-primary;
         }
     }
+
  & ul {
-    @include desktop-only{
+    @include media(desktop-only){
         display: flex;
-        flex-direction: row;
-        
-  
-        
+        flex-direction: row;    
     }
  }
     & li {
         list-style-type: none;
         margin-bottom: 0.5*$layout_margin;
         font-weight: 900;
-        @include desktop-only{
+        @include media(desktop-only){
            width: 30%;
-          
            text-align:end;
-           
-           
-           
-        }
-        
-      
+        }  
     }
-
 }

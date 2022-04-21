@@ -29,10 +29,6 @@
             @media screen and (max-width: map-get($breakpoints, phone)) { 
               @content; 
             } 
-          } @else if $key == tablet-down { 
-            @media screen and (min-width: map-get($breakpoints, phone)) and (max-width: map-get($breakpoints, tablet)) { 
-              @content; 
-            } 
           } @else if $key == tablet-only { 
             @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)) { 
               @content; 

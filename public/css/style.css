@@ -1,4 +1,19 @@
 /* $layout_margin : 4.4%; */
+/* @mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        &{ @content; }
+        }
+    }
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)){
+        &{ @content; }
+        }
+    }
+@mixin tablet-down {
+    @media screen and (min-width: map-get($breakpoints, phone)) and (max-width: map-get($breakpoints, tablet)){
+        &{ @content; }
+        }
+    } */
 *,
 *::after,
 *::before {
@@ -28,7 +43,7 @@ h1 {
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: large;
   margin-bottom: 1rem;
@@ -191,12 +206,6 @@ button {
   position: relative;
   border-radius: 20px 20px 0px 0px;
   box-sizing: border-box;
-  /* @include desktop-only {
-      height: 80%;
-  }
-  @include tablet-only {
-      height: 80%;
-  } */
 }
 @media screen and (min-width: 900px) {
   .card-resto .card-image {
@@ -307,6 +316,13 @@ footer {
     justify-content: flex-start;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 900px) {
   footer h2 {
     width: 15%;
@@ -374,6 +390,14 @@ footer li {
     margin-right: 2rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .fctnt {
+    display: flex;
+    text-align: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
 .fctnt__ens_btns {
   display: flex;
   flex-direction: column;
@@ -384,6 +408,12 @@ footer li {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 900px) {
+  .fctnt__ens_btns {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -402,6 +432,11 @@ footer li {
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .resto {
     padding: 2rem 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .resto h2 {
+    text-align: center;
   }
 }
 @media screen and (min-width: 900px) {
