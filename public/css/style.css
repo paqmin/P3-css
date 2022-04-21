@@ -33,7 +33,7 @@ h2 {
   font-size: large;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   h2 {
     margin-bottom: 2rem;
   }
@@ -108,7 +108,7 @@ button {
   margin: 0.5rem 0;
   left: 1rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .btn_fctnt {
     width: 30%;
     /* margin-right: 2*$layout_margin;
@@ -154,7 +154,7 @@ button {
   width: 100%;
   margin-bottom: 4%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .card-resto {
     width: 48%;
     height: 400px;
@@ -181,7 +181,7 @@ button {
   border-radius: 20px 20px 0px 0px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .card-resto .card-image {
     height: 80%;
   }
@@ -291,10 +291,23 @@ footer a i {
 footer a:hover {
   color: #9356DC;
 }
+@media screen and (min-width: 900px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 footer li {
   list-style-type: none;
   margin-bottom: 0.5rem;
   font-weight: 900;
+}
+@media screen and (min-width: 900px) {
+  footer li {
+    width: 20%;
+    font-size: 70%;
+  }
 }
 
 .slogan {
@@ -316,7 +329,7 @@ footer li {
   flex-direction: column;
   margin: 2rem 1.2rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .fctnt {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -327,7 +340,7 @@ footer li {
   flex-direction: column;
   align-items: flex-end;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .fctnt__ens_btns {
     display: flex;
     flex-flow: row wrap;
@@ -342,12 +355,12 @@ footer li {
   background-color: #F2F2F2;
   padding: 2rem 1rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .resto {
     padding: 2rem 2rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .resto .liste_resto {
     display: flex;
     flex-flow: row wrap;
@@ -385,7 +398,7 @@ footer li {
   margin-top: -2rem;
   background-color: #F2F2F2;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .menu .menu__description--plat {
     display: flex;
     flex-flow: row wrap;
@@ -398,7 +411,7 @@ footer li {
   padding: 2rem;
   background-color: #F2F2F2;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .menu__description {
     width: 30%;
   }
