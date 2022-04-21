@@ -17,8 +17,8 @@
         height: 400px;
     }
     @include tablet-only {
-        width: 40%;
-        height: 200px;
+        width: 48%;
+        height: 300px;
     }
 
     &__new {
@@ -43,12 +43,15 @@
         position: relative;
         border-radius: 20px 20px 0px 0px;
         box-sizing: border-box;
-        @include desktop-only {
+        @include media(desktop-only, tablet-only){
+            height: 80%;
+        }
+        /* @include desktop-only {
             height: 80%;
         }
         @include tablet-only {
             height: 80%;
-        }
+        } */
     }
 
     & .card-image img {

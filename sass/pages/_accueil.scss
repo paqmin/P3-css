@@ -44,8 +44,19 @@
     @include desktop-only {
     padding: 2*$layout_margin 2*$layout_margin;
     }
+    @include tablet-only {
+        padding: 2*$layout_margin 2*$layout_margin;
+        }
     & .liste_resto {
         @include desktop-only {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            /* margin-right: 2*$layout_margin;
+            margin-left: 2*$layout_margin; */
+        }
+        @include tablet-only {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;

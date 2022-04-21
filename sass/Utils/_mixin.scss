@@ -22,4 +22,29 @@
         &{ @content; }
         }
     }
-    
+
+    @mixin media($keys...) { 
+        @each $key in $keys { 
+          @if $key == phone { 
+            @media screen and (max-width: map-get($breakpoints, phone)) { 
+              @content; 
+            } 
+          } @else if $key == tablet-down { 
+            @media screen and (min-width: map-get($breakpoints, phone)) and (max-width: map-get($breakpoints, tablet)) { 
+              @content; 
+            } 
+          } @else if $key == tablet-only { 
+            @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)) { 
+              @content; 
+            } 
+        } @else if $key == desktop-only { 
+            @media screen and (min-width: map-get($breakpoints, desktop)) { 
+              @content; 
+            } 
+          } @else if type_of($key) == number { 
+            @media screen and (max-width: $key) { 
+              @content; 
+            } 
+          } 
+        } 
+      }
