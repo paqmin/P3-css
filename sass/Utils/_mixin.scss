@@ -19,5 +19,9 @@
     @content;
         }
     }
-
+@mixin tablet-down {
+    @media screen and (min-width: map-get($breakpoints, phone)) and (max-width: map-get($breakpoints, tablet)){
+    @content;
+        }
+    }
     

@@ -4,9 +4,23 @@ footer {
     flex-direction: column;
     width: 100%;
     padding: 2*$layout_margin 1.5*$layout_margin;
-   
+    @include desktop-only{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;   
+    }
     
-
+    & h2{
+        @include desktop-only{
+         width: 15%;   
+         text-align: center; 
+        }  
+    }
+    & nav{
+        @include desktop-only{
+         width: 82%;    
+        }  
+    }
     & a {
         text-decoration: none;
         color: $colour-white;
@@ -27,7 +41,8 @@ footer {
     @include desktop-only{
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        
+  
         
     }
  }
@@ -36,8 +51,11 @@ footer {
         margin-bottom: 0.5*$layout_margin;
         font-weight: 900;
         @include desktop-only{
-           width: 20%;
-           font-size: 70%;
+           width: 30%;
+          
+           text-align:end;
+           
+           
            
         }
         

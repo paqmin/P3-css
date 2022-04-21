@@ -57,6 +57,11 @@ footer li a {
   font-size: large;
   color: white;
 }
+@media screen and (min-width: 900px) {
+  footer li a {
+    font-size: 95%;
+  }
+}
 
 h4 {
   font-family: Arial, Helvetica, sans-serif;
@@ -278,6 +283,24 @@ footer {
   width: 100%;
   padding: 2rem 1.5rem;
 }
+@media screen and (min-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer h2 {
+    width: 15%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer nav {
+    width: 82%;
+  }
+}
 footer a {
   text-decoration: none;
   color: #fff;
@@ -295,7 +318,6 @@ footer a:hover {
   footer ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 footer li {
@@ -305,8 +327,8 @@ footer li {
 }
 @media screen and (min-width: 900px) {
   footer li {
-    width: 20%;
-    font-size: 70%;
+    width: 30%;
+    text-align: end;
   }
 }
 
@@ -402,9 +424,10 @@ footer li {
   .menu .menu__description--plat {
     display: flex;
     flex-flow: row wrap;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-between;
+    align-content: center;
     background-color: #F2F2F2;
+    padding: 0 2rem;
   }
 }
 .menu__description {
@@ -413,7 +436,8 @@ footer li {
 }
 @media screen and (min-width: 900px) {
   .menu__description {
-    width: 30%;
+    width: 400px;
+    padding: 2rem 0;
   }
 }
 .menu__description--titre {
