@@ -1,6 +1,6 @@
 .btn {
-    color: white;
-    background: linear-gradient($colour-secondary, $colour-primary);
+    color: $colour-white;
+    background: $colour-gradient;
     width: 230px;
     height: 50px;
     border: none;
@@ -8,8 +8,7 @@
     border-radius: 25px;
 
     &:hover {
-       color: $colour-lightgray;
-       background: linear-gradient($colour-primary, $colour-secondary);
+    background: lighten($colour-gradient, 20%);
 
     }
 }
