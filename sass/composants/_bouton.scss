@@ -1,15 +1,15 @@
 .btn {
     color: $colour-white;
-    background: $colour-gradient;
+    background: linear-gradient($colour-secondary, $colour-primary);
     width: 230px;
     height: 50px;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 25px;
+    @include shadow;
 
     &:hover {
-    background: lighten($colour-gradient, 20%);
-
+    background:linear-gradient(lighten($colour-secondary,10%), lighten($colour-primary,10%));
+    color: $colour-black;
     }
 }
 .cursor{
