@@ -73,6 +73,7 @@
             padding: $layout_margin;
             border-radius: 20px;
             margin-bottom: $layout_margin;
+            animation : bloc_menu 2s forwards;
             @include shadow;
 
             & h4 {
@@ -81,7 +82,15 @@
             &:hover{
             @include shadow-strong;
             }
-
+            &:nth-child(2) {
+                animation-delay: 0.1s;
+              }
+              &:nth-child(4) {
+                animation-delay: 0.2s;
+              }
+              &:nth-child(5) {
+                animation-delay: 0.3s;
+              }
             &--details {
                 display: flex;
                 flex-direction: row;
