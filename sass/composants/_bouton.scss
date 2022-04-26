@@ -10,6 +10,8 @@
     &:hover {
     background:linear-gradient(lighten($colour-secondary,10%), lighten($colour-primary,10%));
     color: $colour-black;
+    @include shadow-strong;
+    
     }
 }
 .cursor{

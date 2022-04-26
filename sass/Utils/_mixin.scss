@@ -1,32 +1,44 @@
-@mixin shadow{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+@mixin shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+@mixin shadow-strong {
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
 @mixin textcut {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 
 
-    @mixin media($keys...) { 
-        @each $key in $keys { 
-          @if $key == phone { 
-            @media screen and (max-width: map-get($breakpoints, phone)) { 
-              @content; 
-            } 
-          } @else if $key == tablet-only { 
-            @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)) { 
-              @content; 
-            } 
-        } @else if $key == desktop-only { 
-            @media screen and (min-width: map-get($breakpoints, desktop)) { 
-              @content; 
-            } 
-          } @else if type_of($key) == number { 
-            @media screen and (max-width: $key) { 
-              @content; 
-            } 
-          } 
-        } 
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if $key==phone {
+      @media screen and (max-width: map-get($breakpoints, phone)) {
+        @content;
       }
+    }
+
+    @else if $key==tablet-only {
+      @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+      }
+    }
+
+    @else if $key==desktop-only {
+      @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+      }
+    }
+
+    @else if type_of($key)==number {
+      @media screen and (max-width: $key) {
+        @content;
+      }
+    }
+  }
+}
