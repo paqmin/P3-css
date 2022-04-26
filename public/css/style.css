@@ -257,25 +257,116 @@ button {
     -webkit-text-fill-color: transparent;
   }
 }
-.loader {
-  border: 16px solid #f3f3f3;
-  /* Light grey */
-  border-top: 16px solid #3498db;
-  /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
+#loader-container {
+  position: absolute;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+  cursor: wait;
+  animation: fade-out 4000ms both;
+  color: #9356DC;
+  /*   & .circle{
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  } */
+}
+#loader-container .center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#loader-container .center .wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, #9356DC, #FF79DA);
+  margin: 10px;
+  animation: wave 0.8s linear infinite;
+  border-radius: 20px;
+}
+#loader-container .center .wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+#loader-container .center .wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+#loader-container .center .wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+#loader-container .center .wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+#loader-container .center .wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+#loader-container .center .wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+#loader-container .center .wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+#loader-container .center .wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+#loader-container .center .wave:nth-child(10) {
+  animation-delay: 0.9s;
 }
 
-@keyframes spin {
+@keyframes wave {
   0% {
-    transform: rotate(0deg);
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(0);
   }
 }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#container {
+  animation: fade-in 6000ms 200ms forwards;
+}
+
 .header {
   background: #fff;
   display: flex;

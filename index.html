@@ -21,15 +21,30 @@
 </head>
 
 <body>
-   
+   <!--  CHARGEMENT LOADER -->
+   <section id="loader-container">
+      <div class="center">
+      <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div></div>
+      LOADING
+   </section>
+   <section id="container">
    <!--  header -->
    <header class="header">
       <a class="header__logo" href="index.html"><img src="public/images/logo/ohmyfood@2x.svg"
             alt="logo_oh_my_food" /></a>
-     
+
    </header>
-   <main class="container">
-        <!-- formulaire -->
+   <main >
+      <!-- formulaire -->
       <form class="form" method="post" action="traitement.php">
          <span class="form__position">
             <i class="fa-solid fa-location-dot fa-xl"></i>
@@ -66,16 +81,18 @@
             </button>
          </div>
       </section>
-     <!--  Liste restaurants -->
+      <!--  Liste restaurants -->
       <section class="resto">
          <h2>Restaurants</h2>
          <div class="liste_resto">
             <!-- Palette des gouts -->
             <a class="card-resto" href="palettedugout.html">
-               <div class="card-resto__new"><h4>Nouveau</h4></div>
+               <div class="card-resto__new">
+                  <h4>Nouveau</h4>
+               </div>
                <div class="card-image">
                   <img class="object-fit-norm" src="public/images/restaurants/palette_du_gout.jpg"
-                     alt="palette_du_gout">     
+                     alt="palette_du_gout">
                </div>
                <div class="bloc-nom">
                   <div class="bloc-nom__texte">
@@ -87,10 +104,12 @@
             </a>
             <!-- La note enchantée -->
             <a class="card-resto" href="lanoteenchantee.html">
-               <div class="card-resto__new"><h4>Nouveau</h4></div>
+               <div class="card-resto__new">
+                  <h4>Nouveau</h4>
+               </div>
                <div class="card-image">
                   <img class="object-fit-norm" src="public/images/restaurants/note_enchantee.jpg"
-                     alt="la_note_enchantee">     
+                     alt="la_note_enchantee">
                </div>
                <div class="bloc-nom">
                   <div class="bloc-nom__texte">
@@ -103,8 +122,7 @@
             <!-- à la française-->
             <a class="card-resto" href="alafrancaise.html">
                <div class="card-image">
-                  <img class="object-fit-norm" src="public/images/restaurants/a_la_francaise.jpg"
-                     alt="a_la_francaise">     
+                  <img class="object-fit-norm" src="public/images/restaurants/a_la_francaise.jpg" alt="a_la_francaise">
                </div>
                <div class="bloc-nom">
                   <div class="bloc-nom__texte">
@@ -114,11 +132,11 @@
                   <i class="fa-regular fa-heart fa-2x coeur"></i>
                </div>
             </a>
-             <!-- Le délice des sens-->
-             <a class="card-resto" href="ledelicedessens.html">
+            <!-- Le délice des sens-->
+            <a class="card-resto" href="ledelicedessens.html">
                <div class="card-image">
                   <img class="object-fit-norm" src="public/images/restaurants/delice_des_sens.jpg"
-                     alt="delice_des_sens">     
+                     alt="delice_des_sens">
                </div>
                <div class="bloc-nom">
                   <div class="bloc-nom__texte">
@@ -142,6 +160,7 @@
          </ul>
       </nav>
    </footer>
+</section>
 </body>
 
 </html>
