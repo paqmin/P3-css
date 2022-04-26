@@ -147,13 +147,10 @@ button {
   color: #9356DC;
 }
 
-.coeur {
-  margin-right: 30px;
-  font-size: 150%;
-}
 .coeur:hover {
   animation: coeurdegrade 1s;
   animation-fill-mode: forwards;
+  font-weight: bold;
 }
 
 .card-resto {
@@ -249,17 +246,15 @@ button {
 
 @keyframes coeurdegrade {
   0% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    opacity: 0.2;
+    opacity: 0.1;
   }
   100% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(180deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
   }
 }
 .loader {

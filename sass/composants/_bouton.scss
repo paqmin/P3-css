@@ -65,13 +65,13 @@
         }
     }
 }
-.coeur /*Appel l'animation faisant le dégradé dans le coeur*/
+.coeur
 {
-	margin-right:30px;
-	font-size:150%;
 	&:hover
 	{
 		animation: coeurdegrade 1s;
 		animation-fill-mode: forwards;	
+        font-weight:bold;
+       
 	}
 }
