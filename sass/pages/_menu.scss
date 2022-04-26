@@ -48,13 +48,11 @@
             padding: 2*$layout_margin 0;
         }
 
-
         &--titre {
             margin-bottom: 3*$layout_margin;
             text-transform: uppercase;
             padding-bottom: 0.5*$layout_margin;
             margin-bottom: $layout_margin;
-
             position: relative;
 
             &:after {
@@ -78,9 +76,11 @@
             @include shadow;
 
             & h4 {
-                @include textcut;
+            @include textcut;
             }
-
+            &:hover{
+            @include shadow-strong;
+            }
 
             &--details {
                 display: flex;
@@ -100,16 +100,5 @@
                 }
             }
         }
-
-
-
     }
-
-
-
-
-
-
-
-
 }

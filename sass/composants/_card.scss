@@ -11,7 +11,10 @@
     color: #333;
     width: 100%;
     margin-bottom: 4%;
-    
+    @include shadow;
+    &:hover{
+        @include shadow-strong;
+    }
     @include media (desktop-only) {
         width: 48%;
         height: 400px;
@@ -67,8 +70,7 @@
 
     .card-image img:hover {
         filter: brightness(1.3);
-        /* filter: grayscale(0.2); */
-        
+        /* filter: grayscale(0.2); */    
     }
 
     & .bloc-nom {
@@ -79,13 +81,10 @@
         box-sizing: border-box;
         padding: $layout_margin;
 
-        &:hover i {
+      /*   &:hover i {
             color: $colour-primary;
             background-color: rgba($colour-primary, 0.2);
-
-        }
-       
-
+        } */
     }
 
 }

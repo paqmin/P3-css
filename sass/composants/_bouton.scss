@@ -11,7 +11,6 @@
     background:linear-gradient(lighten($colour-secondary,10%), lighten($colour-primary,10%));
     color: $colour-black;
     @include shadow-strong;
-    
     }
 }
 .cursor{
@@ -60,8 +59,19 @@
 
     &:hover {
         background-color: rgba($colour-primary, 0.2);
+        @include shadow-strong;
         & i {
             color: $colour-primary;
         }
     }
+}
+.coeur /*Appel l'animation faisant le dégradé dans le coeur*/
+{
+	margin-right:30px;
+	font-size:150%;
+	&:hover
+	{
+		animation: gradientheart 1s;
+		animation-fill-mode: forwards;	
+	}
 }

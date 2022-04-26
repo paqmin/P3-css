@@ -93,8 +93,7 @@ button {
 .btn:hover {
   background: linear-gradient(#fface8, #ae80e5);
   color: #000;
-  -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
 }
 
 .cursor:hover {
@@ -142,9 +141,19 @@ button {
 }
 .btn_fctnt:hover {
   background-color: rgba(147, 86, 220, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
 }
 .btn_fctnt:hover i {
   color: #9356DC;
+}
+
+.coeur {
+  margin-right: 30px;
+  font-size: 150%;
+}
+.coeur:hover {
+  animation: gradientheart 1s;
+  animation-fill-mode: forwards;
 }
 
 .card-resto {
@@ -160,6 +169,10 @@ button {
   color: #333;
   width: 100%;
   margin-bottom: 4%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-resto:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
 }
 @media screen and (min-width: 900px) {
   .card-resto {
@@ -228,10 +241,10 @@ button {
   align-items: center;
   box-sizing: border-box;
   padding: 1rem;
-}
-.card-resto .bloc-nom:hover i {
-  color: #9356DC;
-  background-color: rgba(147, 86, 220, 0.2);
+  /*   &:hover i {
+        color: $colour-primary;
+        background-color: rgba($colour-primary, 0.2);
+    } */
 }
 
 .loader {
@@ -536,6 +549,9 @@ footer li {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+.menu__description--bloc_plat:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
 }
 .menu__description--bloc_plat--details {
   display: flex;
