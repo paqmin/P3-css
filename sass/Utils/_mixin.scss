@@ -3,8 +3,7 @@
 }
 
 @mixin shadow-strong {
-  -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 @mixin textcut {
