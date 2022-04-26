@@ -1,0 +1,19 @@
+@keyframes coeurdegrade
+{
+	0%
+	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight:bold;
+	opacity:0.2;
+	}
+	100%
+	{
+	background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight:bold;	
+	}
+
+}
