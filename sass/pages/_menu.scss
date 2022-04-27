@@ -89,9 +89,11 @@
             &:hover {
                 @include shadow-strong;
 
-                & .menu__description--bloc_plat--check_status {
-                    transform: translate(0);
+                & .menu__description--bloc_plat--check_status, .menu__description--bloc_plat--details h4 {
+                    transform: translate(0) ;
                 }
+                
+                
             }
 
             & .info {
@@ -109,18 +111,22 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
 
                 & p {
                     @include textcut;
                     margin-right: 2%;
+                    width:70%
                 }
 
                 & h4 {
+                    width: 30%;
                     margin-left: 10%;
                     overflow: visible;
                     text-overflow: initial;
                     margin-bottom: 0px;
                     @include check-status-off;
+                    text-align: right;
                 }
             }
 
@@ -137,6 +143,8 @@
 
                 & i {
                     padding: $layout_margin;
+                    animation: rotation 1050ms 800ms ;
+                    /* animation-iteration-count: 1; */
                 }
             }
         }

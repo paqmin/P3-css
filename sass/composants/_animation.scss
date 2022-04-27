@@ -1,42 +1,38 @@
-@keyframes coeurdegrade
-{
-	0%
-	{
-	background: linear-gradient(180deg, $colour-primary, $colour-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	opacity:0.1;
+@keyframes coeurdegrade {
+	0% {
+		background: linear-gradient(180deg, $colour-primary, $colour-secondary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		opacity: 0.1;
 	}
 
-	100%
-	{
-	background: linear-gradient(180deg, $colour-primary, $colour-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+	100% {
+		background: linear-gradient(180deg, $colour-primary, $colour-secondary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
 	}
 
 }
 
-@keyframes bloc_menu
-{
- 0%{
-	 transform: translateY(30px);
-	 opacity: 0;
+@keyframes bloc_menu {
+	0% {
+		transform: translateY(30px);
+		opacity: 0;
 	}
- 100%{
-	transform: translateY(0px)
+
+	100% {
+		transform: translateY(0px)
+	}
+}
+
+@keyframes rotation {
+	0% {
+	  transform: rotate(0deg);
+	}
 	
-	}	
-}
-
-@keyframes translate{
-	0%{
-	transform: scaleX(0);
+	
+	100% {
+	  transform: rotate(360deg);
 	}
-
-	100%{
-	transform: scaleX(1);
-
-	}
-}
+  }
