@@ -9,7 +9,7 @@
   align-items: center;
   transition: opacity 1s ease-in-out;
   cursor: wait;
-  animation: fade-out 4000ms both;
+  animation: fade-out 2000ms both;
   color: $colour-primary;
 
 
@@ -33,44 +33,44 @@
       height: 100px;
       background: linear-gradient(45deg, $colour-primary, $colour-secondary);
       margin: 10px;
-      animation: wave 0.8s linear infinite;
+      animation: wave 0.6s linear infinite;
       border-radius: 20px;
     }
 
     & .wave:nth-child(2) {
-      animation-delay: 0.1s;
+      animation-delay: 0.05s;
     }
 
     & .wave:nth-child(3) {
-      animation-delay: 0.2s;
+      animation-delay: 0.1s;
     }
 
     & .wave:nth-child(4) {
-      animation-delay: 0.3s;
+      animation-delay: 0.15s;
     }
 
     & .wave:nth-child(5) {
-      animation-delay: 0.4s;
+      animation-delay: 0.2s;
     }
 
     & .wave:nth-child(6) {
-      animation-delay: 0.5s;
+      animation-delay: 0.25s;
     }
 
     & .wave:nth-child(7) {
-      animation-delay: 0.6s;
+      animation-delay: 0.3s;
     }
 
     & .wave:nth-child(8) {
-      animation-delay: 0.7s;
+      animation-delay: 0.35s;
     }
 
     & .wave:nth-child(9) {
-      animation-delay: 0.8s;
+      animation-delay: 0.4s;
     }
 
     & .wave:nth-child(10) {
-      animation-delay: 0.9s;
+      animation-delay: 0.45s;
     }
   }
 
@@ -97,11 +97,12 @@
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: scaleX(0);
+ /*  transform: scaleX(0);  */
   }
 
   50% {
     opacity: 0;
+    transform: scaleX(1); 
 
   }
 
@@ -111,7 +112,7 @@
   }
 
   100% {
-
+    transform: scaleX(1); 
     opacity: 1;
   }
 }
@@ -138,7 +139,8 @@
 }
 
 #container {
-  animation: fade-in 6000ms 200ms forwards;
+  transform: scaleX(0);
+  animation: fade-in 3000ms 150ms forwards;
 
 }
 
