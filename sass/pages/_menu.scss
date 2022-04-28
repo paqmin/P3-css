@@ -84,9 +84,9 @@
                 flex-direction: row;
                 padding: 0.7*$layout_margin $layout_margin;
                 overflow: hidden;
-
+                @include textcut;
                 &--titre-plat {
-                    flex:3;
+                    width: 70%;
                     
                     & h4{
                     @include textcut;
@@ -105,7 +105,7 @@
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: flex-end;
-                    flex:1;
+                    width: 30%;
                     padding:0 $layout_margin;
                     font-weight: 900;
                          }

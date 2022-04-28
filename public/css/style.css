@@ -679,9 +679,12 @@ footer li {
   flex-direction: row;
   padding: 0.7rem 1rem;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__description--bloc_plat .info--titre-plat {
-  flex: 3;
+  width: 70%;
 }
 .menu__description--bloc_plat .info--titre-plat h4 {
   text-overflow: ellipsis;
@@ -699,7 +702,7 @@ footer li {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  flex: 1;
+  width: 30%;
   padding: 0 1rem;
   font-weight: 900;
 }
