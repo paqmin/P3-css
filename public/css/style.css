@@ -608,6 +608,15 @@ footer li {
   margin-top: -2rem;
   background-color: #F2F2F2;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .menu__entete .nom_resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
 @media screen and (min-width: 900px) {
   .menu .menu__description--plat {
     display: flex;
@@ -622,10 +631,11 @@ footer li {
   .menu .menu__description--plat {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     background-color: #F2F2F2;
     padding: 0 2rem;
+    gap: 1rem;
   }
 }
 .menu__description {

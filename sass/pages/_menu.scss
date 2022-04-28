@@ -24,19 +24,35 @@
             border-radius: 45px 45px 0 0;
             margin-top: -2*$layout_margin;
             background-color: $colour-lightgray;
+            @include media (tablet-only){
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center; 
+                gap: $layout_margin;
+            }
         }
     }
 
     /*  PLATS */
     .menu__description--plat {
 
-        @include media(desktop-only, tablet-only) {
+        @include media(desktop-only) {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: center;
             background-color: $colour-lightgray;
             padding: 0 2*$layout_margin;
+        }
+        @include media(tablet-only) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            background-color: $colour-lightgray;
+            padding: 0 2*$layout_margin;
+            gap: $layout_margin;
         }
     }
 
