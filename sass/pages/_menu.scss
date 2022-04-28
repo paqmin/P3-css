@@ -46,6 +46,7 @@
 
         @include media(desktop-only, tablet-only) {
             width: 400px;
+            padding: 0px;
         }
 
         &--titre {

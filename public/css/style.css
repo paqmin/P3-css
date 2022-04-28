@@ -121,7 +121,7 @@ button {
     width: 30%;
     /* margin-right: 2*$layout_margin;
     margin-left: 2*$layout_margin; */
-    padding-right: 2%;
+    padding-right: 1%;
   }
 }
 .btn_fctnt__numero {
@@ -636,11 +636,13 @@ footer li {
 @media screen and (min-width: 900px) {
   .menu__description {
     width: 400px;
+    padding: 0px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .menu__description {
     width: 400px;
+    padding: 0px;
   }
 }
 .menu__description--titre {
@@ -679,23 +681,23 @@ footer li {
   flex-direction: row;
   padding: 0.7rem 1rem;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__description--bloc_plat .info--titre-plat {
   width: 70%;
 }
 .menu__description--bloc_plat .info--titre-plat h4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin-bottom: 0.5rem;
 }
 .menu__description--bloc_plat .info--titre-plat p.produit {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__description--bloc_plat .info--prix {
   display: flex;
