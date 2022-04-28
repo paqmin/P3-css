@@ -46,7 +46,6 @@
 
         @include media(desktop-only, tablet-only) {
             width: 400px;
-            /* padding: 2*$layout_margin 0; */
         }
 
         &--titre {
@@ -56,7 +55,7 @@
             margin-bottom: $layout_margin;
             position: relative;
 
-            &:after {
+            &:after {/* ligne verte*/
                 content: '';
                 border-bottom: 3px solid $colour-tertiary;
                 width: 50px;
@@ -64,91 +63,90 @@
                 position: absolute;
                 left: 0;
                 top: 1.5*$layout_margin;
-
             }
         }
 
         &--bloc_plat {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            position: relative;
-            overflow: hidden;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
             background-color: $colour-white;
-
             border-radius: 20px;
             margin-bottom: $layout_margin;
             animation: bloc_menu 2s forwards;
             @include shadow;
 
-            & h4 {
-                @include textcut;
-            }
-
-            &:hover {
-                @include shadow-strong;
-
-                & .menu__description--bloc_plat--check_status, .menu__description--bloc_plat--details h4 {
-                    transform: translate(0) ;
-                }
-                
-                
-            }
-
             & .info {
-                padding: 0.7*$layout_margin $layout_margin;
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: stretch;
-
-            }
-
-            &--details {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
+                padding: 0.7*$layout_margin $layout_margin;
+                overflow: hidden;
 
-                & p {
+                &--titre-plat {
+                    flex:3;
+                    
+                    & h4{
                     @include textcut;
-                    margin-right: 2%;
-                    width:70%
-                }
+                    margin-bottom: 0.5*$layout_margin;
+                        }
 
-                & h4 {
-                    width: 30%;
-                    margin-left: 10%;
-                    overflow: visible;
-                    text-overflow: initial;
-                    margin-bottom: 0px;
-                    @include check-status-off;
-                    text-align: right;
-                }
-            }
+                    & p.produit{  
+                       @include textcut;
+                  
+                             }
+
+                             }
+
+                &--prix {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    flex:1;
+                    padding:0 $layout_margin;
+                    font-weight: 900;
+                         }
+                    }
 
             &--check_status {
-                position: relative;
+                right: 0px;
+                width: 4*$layout_margin;
+                position: absolute;
                 background-color: $colour-tertiary;
                 color: $colour-white;
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 border-radius: 0 20px 20px 0;
-                transform-origin: right;
-                @include check-status-off;
-
+                /*bouton check caché*/
+                transform: translateX(100%);
+                transition: 0.5s ease;
 
                 & i {
-                    padding: $layout_margin;
-                    animation: rotation 1050ms 800ms ;
-                    /* animation-iteration-count: 1; */
+                    padding: 1.2*$layout_margin;
+                        }
+                        }
+            /*animation bouton check */            
+            &:hover {
+                @include shadow-strong;
+
+                & .menu__description--bloc_plat--check_status {
+                    transform: translateX(0%);
+                    transition: 0.5s ease;
+                    & i{
+                        animation: rotation 700ms ;
+                    }
                 }
+               & .info{
+                   padding-right: 4*$layout_margin;
+               }
+
             }
         }
-
+        /*fondu enchainé et mvt décalé de chaque bloc*/
         &--bloc_plat:nth-child(2) {
             animation-delay: 0.1s;
         }

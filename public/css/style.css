@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* $layout_margin : 4.4%; */
 *,
 *::after,
@@ -630,17 +631,16 @@ footer li {
 .menu__description {
   padding: 2rem;
   background-color: #F2F2F2;
+  /*fondu enchainé et mvt décalé de chaque bloc*/
 }
 @media screen and (min-width: 900px) {
   .menu__description {
     width: 400px;
-    /* padding: 2*$layout_margin 0; */
   }
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .menu__description {
     width: 400px;
-    /* padding: 2*$layout_margin 0; */
   }
 }
 .menu__description--titre {
@@ -651,6 +651,7 @@ footer li {
   position: relative;
 }
 .menu__description--titre:after {
+  /* ligne verte*/
   content: "";
   border-bottom: 3px solid #99E2D0;
   width: 50px;
@@ -660,76 +661,77 @@ footer li {
   top: 1.5rem;
 }
 .menu__description--bloc_plat {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 20px;
   margin-bottom: 1rem;
   animation: bloc_menu 2s forwards;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /*animation bouton check */
 }
-.menu__description--bloc_plat h4 {
+.menu__description--bloc_plat .info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0.7rem 1rem;
+  overflow: hidden;
+}
+.menu__description--bloc_plat .info--titre-plat {
+  flex: 3;
+}
+.menu__description--bloc_plat .info--titre-plat h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.menu__description--bloc_plat .info--titre-plat p.produit {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__description--bloc_plat .info--prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
+  padding: 0 1rem;
+  font-weight: 900;
+}
+.menu__description--bloc_plat--check_status {
+  right: 0px;
+  width: 4rem;
+  position: absolute;
+  background-color: #99E2D0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  /*bouton check caché*/
+  transform: translateX(100%);
+  transition: 0.5s ease;
+}
+.menu__description--bloc_plat--check_status i {
+  padding: 1.2rem;
 }
 .menu__description--bloc_plat:hover {
   box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
 }
-.menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status, .menu__description--bloc_plat:hover .menu__description--bloc_plat--details h4 {
-  transform: translate(0);
+.menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status {
+  transform: translateX(0%);
+  transition: 0.5s ease;
 }
-.menu__description--bloc_plat .info {
-  padding: 0.7rem 1rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+.menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status i {
+  animation: rotation 700ms;
 }
-.menu__description--bloc_plat--details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.menu__description--bloc_plat--details p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-right: 2%;
-  width: 70%;
-}
-.menu__description--bloc_plat--details h4 {
-  width: 30%;
-  margin-left: 10%;
-  overflow: visible;
-  text-overflow: initial;
-  margin-bottom: 0px;
-  transform: translate(4rem);
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  text-align: right;
-}
-.menu__description--bloc_plat--check_status {
-  position: relative;
-  background-color: #99E2D0;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  border-radius: 0 20px 20px 0;
-  transform-origin: right;
-  transform: translate(4rem);
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-}
-.menu__description--bloc_plat--check_status i {
-  padding: 1rem;
-  animation: rotation 1050ms 800ms;
-  /* animation-iteration-count: 1; */
+.menu__description--bloc_plat:hover .info {
+  padding-right: 4rem;
 }
 .menu__description--bloc_plat:nth-child(2) {
   animation-delay: 0.1s;
