@@ -8,6 +8,7 @@
 
 	100% {
 		background: linear-gradient(180deg, $colour-primary, $colour-secondary);
+		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 
