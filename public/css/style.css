@@ -35,7 +35,7 @@ h2 {
   font-size: large;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   h2 {
     margin-bottom: 2rem;
   }
@@ -59,7 +59,7 @@ footer li a {
   font-size: large;
   color: white;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   footer li a {
     font-size: 95%;
   }
@@ -116,7 +116,7 @@ button {
   margin: 0.5rem 0;
   left: 1rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .btn_fctnt {
     width: 30%;
     /* margin-right: 2*$layout_margin;
@@ -173,13 +173,13 @@ button {
 .card-resto:hover {
   box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .card-resto {
     width: 48%;
     height: 400px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .card-resto {
     width: 48%;
     height: 300px;
@@ -206,12 +206,12 @@ button {
   border-radius: 20px 20px 0px 0px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .card-resto .card-image {
     height: 80%;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .card-resto .card-image {
     height: 80%;
   }
@@ -434,27 +434,27 @@ footer {
   width: 100%;
   padding: 2rem 1.5rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   footer {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   footer h2 {
     width: 15%;
     text-align: center;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   footer nav {
     width: 82%;
   }
@@ -472,7 +472,7 @@ footer a i {
 footer a:hover {
   color: #9356DC;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   footer ul {
     display: flex;
     flex-direction: row;
@@ -483,7 +483,7 @@ footer li {
   margin-bottom: 0.5rem;
   font-weight: 900;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   footer li {
     width: 30%;
     text-align: end;
@@ -509,13 +509,13 @@ footer li {
   flex-direction: column;
   margin: 2rem 1.2rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .fctnt {
     margin-left: 2rem;
     margin-right: 2rem;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .fctnt {
     display: flex;
     text-align: center;
@@ -528,14 +528,14 @@ footer li {
   flex-direction: column;
   align-items: flex-end;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .fctnt__ens_btns {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .fctnt__ens_btns {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -549,22 +549,22 @@ footer li {
   background-color: #F2F2F2;
   padding: 2rem 1rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .resto {
     padding: 2rem 2rem;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .resto {
     padding: 2rem 2rem;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .resto h2 {
     text-align: center;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .resto .liste_resto {
     display: flex;
     flex-flow: row wrap;
@@ -572,7 +572,7 @@ footer li {
     align-items: center;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .resto .liste_resto {
     display: flex;
     flex-flow: row wrap;
@@ -608,7 +608,7 @@ footer li {
   margin-top: -2rem;
   background-color: #F2F2F2;
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .menu__entete .nom_resto {
     display: flex;
     flex-direction: row;
@@ -617,7 +617,7 @@ footer li {
     gap: 1rem;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .menu .menu__description--plat {
     display: flex;
     flex-flow: row wrap;
@@ -627,7 +627,7 @@ footer li {
     padding: 0 2rem;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .menu .menu__description--plat {
     display: flex;
     flex-flow: row wrap;
@@ -643,13 +643,13 @@ footer li {
   background-color: #F2F2F2;
   /*fondu enchainé et mvt décalé de chaque bloc*/
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   .menu__description {
     width: 400px;
     padding: 0px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
   .menu__description {
     width: 400px;
     padding: 0px;

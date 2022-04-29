@@ -4,7 +4,7 @@
 <head>
    <title>ohmyfood, des restaurants d'exception !</title>
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
    <link rel="icon" type="image/png" sizes="16x16" href="public/images/logo/favicons/favicon-16x16.png">
    <meta name="msapplication-TileColor" content="#ffffff">
@@ -22,7 +22,7 @@
 
 <body>
    <!--  CHARGEMENT LOADER -->
-   <section id="loader-container">
+   <div id="loader-container">
       <div class="center">
          <div class="wave"></div>
          <div class="wave"></div>
@@ -36,7 +36,7 @@
          <div class="wave"></div>
       </div>
       LOADING
-   </section>
+   </div>
    <section id="container">
       <!--  header -->
       <header class="header">
@@ -44,7 +44,7 @@
                alt="logo_oh_my_food" /></a>
 
       </header>
-      <main>
+      <section class="main">
          <!-- formulaire -->
          <form class="form" method="post" action="traitement.php">
             <span class="form__position">
@@ -150,7 +150,7 @@
                </a>
             </div>
          </section>
-      </main>
+      </section>
       <footer>
          <h2>ohmyfood</h2>
          <nav>
