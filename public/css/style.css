@@ -640,13 +640,13 @@ footer li {
 }
 @media screen and (min-width: 1100px) {
   .menu__description {
-    width: 400px;
+    width: 32%;
     padding: 0px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1100px) {
   .menu__description {
-    width: 400px;
+    width: 48%;
     padding: 0px;
   }
 }
@@ -730,18 +730,42 @@ footer li {
 .menu__description--bloc_plat--check_status i {
   padding: 1.2rem;
 }
-.menu__description--bloc_plat:hover {
-  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
-}
-.menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status {
+.menu__description--bloc_plat:active .menu__description--bloc_plat--check_status {
   transform: translateX(0%);
   transition: 0.5s ease;
 }
-.menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status i {
+.menu__description--bloc_plat:active .menu__description--bloc_plat--check_status i {
   animation: rotation 700ms;
 }
-.menu__description--bloc_plat:hover .info {
+.menu__description--bloc_plat:active .info {
   padding-right: 4rem;
+}
+.menu__description--bloc_plat:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 15px;
+}
+@media screen and (min-width: 1100px) {
+  .menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status {
+    transform: translateX(0%);
+    transition: 0.5s ease;
+  }
+  .menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status i {
+    animation: rotation 700ms;
+  }
+  .menu__description--bloc_plat:hover .info {
+    padding-right: 4rem;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status {
+    transform: translateX(0%);
+    transition: 0.5s ease;
+  }
+  .menu__description--bloc_plat:hover .menu__description--bloc_plat--check_status i {
+    animation: rotation 700ms;
+  }
+  .menu__description--bloc_plat:hover .info {
+    padding-right: 4rem;
+  }
 }
 .menu__description--bloc_plat:nth-child(2) {
   animation-delay: 0.1s;
