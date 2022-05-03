@@ -33,8 +33,6 @@
     left: $layout_margin;
     @include media(desktop-only){
         width: 30%;
-        /* margin-right: 2*$layout_margin;
-        margin-left: 2*$layout_margin; */
         padding-right: 1%;
     } 
 
