@@ -9,9 +9,7 @@
 @mixin textcut {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
-  
-  
+  text-overflow: ellipsis;  
 }
 
 @mixin media($keys...) {
