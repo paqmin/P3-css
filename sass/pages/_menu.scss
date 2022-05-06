@@ -59,7 +59,7 @@
     &__description {
         padding: 2*$layout_margin;
         background-color: $colour-lightgray;
-
+        transition: opacity 1s ease-in-out;
         @include media(desktop-only) {
           width: 32%;
           padding: 0px;
@@ -98,7 +98,8 @@
             background-color: $colour-white;
             border-radius: 20px;
             margin-bottom: $layout_margin;
-            animation: bloc_menu 2s forwards;
+            
+            animation: bloc_menu 3000ms forwards;
             @include shadow;
 
             & .info {
@@ -189,15 +190,19 @@
         }
         /*fondu enchainé et mvt décalé de chaque bloc*/
         &--bloc_plat:nth-child(2) {
-            animation-delay: 0.1s;
+            animation-delay: 0.10s;
         }
 
         &--bloc_plat:nth-child(3) {
-            animation-delay: 0.2s;
+            animation-delay: 0.15s;
         }
 
         &--bloc_plat:nth-child(4) {
-            animation-delay: 0.3s;
+            animation-delay: 0.2s;
+        }
+
+        &--bloc_plat:nth-child(5) {
+            animation-delay: 0.25s;
         }
     }
 }
