@@ -37,6 +37,33 @@
 	}
 }
 
+/* Menu animation */
+@keyframes proggressiveAppearance{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+/* Cards New Fading anim */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
 @keyframes rotation {
 	0% {
 	  transform: rotate(0deg);
