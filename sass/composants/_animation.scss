@@ -19,47 +19,16 @@
 
 @keyframes bloc_menu {
 	0% {
-		transform: translateY(15px);
 		opacity: 0;
-	}
-	50% {
-		
-		opacity: 0.7;
-	}
-	
-	80% {
-		transform: translateY(0px);
-		opacity: 0.9;
-	}
-	100% {
-		transform: translateY(0px);
-		opacity: 1;
-	}
-}
-
-/* Menu animation */
-@keyframes proggressiveAppearance{
-    0%{
-        opacity: 0;
         transform: translateY(30px);
-    }
-    100%{
-        opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
         transform: translateY(0);
-    }
-    
+	}
 }
 
-/* Cards New Fading anim */
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100%{
-        opacity: 0;
-    }
-}
 
 
 

@@ -98,9 +98,8 @@
             background-color: $colour-white;
             border-radius: 20px;
             margin-bottom: $layout_margin;
-            animation: proggressiveAppearance 1.5s forwards;
             opacity: 0;
-            /* animation: bloc_menu 3000ms forwards; */
+            animation: bloc_menu 1500ms forwards; 
             @include shadow;
 
             & .info {
