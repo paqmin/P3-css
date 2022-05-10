@@ -152,11 +152,9 @@
                 & i {
                     padding: 1.2*$layout_margin;
                         }
-                        }
-            /*animation bouton check */ 
-            
-            &:active{
-                
+                    }
+            /*animation bouton check */          
+            &:active{           
                 & .menu__description--bloc_plat--check_status {
                     transform: translateX(0%);
                     transition: 0.5s ease;
