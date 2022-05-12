@@ -8,7 +8,7 @@
 
 html {
     // 10px div by def of 16px
-    font-size: 100%;
+    
 }
 
 body {
@@ -17,13 +17,6 @@ body {
     min-width: 320px;
     a {
         text-decoration: none;
+        color:$colour-black;
       }
-
-      &:hover {
-        a {
-          text-decoration: none;
-        }
-      }
-  
-
 }
