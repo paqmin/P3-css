@@ -15,6 +15,15 @@ body {
     box-sizing: border-box;
     background: $colour-white;
     min-width: 320px;
+    a {
+        text-decoration: none;
+      }
+
+      &:hover {
+        a {
+          text-decoration: none;
+        }
+      }
   
 
 }

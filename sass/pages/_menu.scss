@@ -168,6 +168,16 @@
             }         
             &:hover {
                 @include shadow-strong;
+                & .menu__description--bloc_plat--check_status {
+                    transform: translateX(0%);
+                    transition: 0.5s ease;
+                    & i{
+                        animation: rotation 700ms ;
+                    }
+                }
+               & .info{
+                   padding-right: 4*$layout_margin;
+               }  
 
             }
             @include media(desktop-only, tablet-only) {
